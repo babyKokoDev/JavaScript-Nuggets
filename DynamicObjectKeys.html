@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person = {
+            name: "john"
+        }
+        console.log(person['name'])
+        person.age = 25
+        console.log(person);
+
+        const items = {
+            'featured-items' : ['item1', 'item2']
+        }
+        console.log(items['featured-items'])
+
+        let appState = 'loading'
+        appState = 'error'
+        const keyName = 'computer'
+
+        const app = {
+            [appState] : true
+        }
+
+        app[keyName] = 'apple'
+
+        console.log(app)
+    </script>
+</body>
+</html>

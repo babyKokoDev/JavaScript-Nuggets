@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
         const person = {
             name: "john"
         }
@@ -46,8 +36,3 @@
         updateState('loading', 'false')
         updateState('products', ['phone', 'iphone'])
         console.log(state)
-
-       
-    </script>
-</body>
-</html>

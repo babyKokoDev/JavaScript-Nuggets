@@ -48,9 +48,14 @@ const fetchApi = () => {
    fetch(url).then((response)=>response.json()).then((data)=>{
     const newData = data.reduce((total, item)=>{
       const {language} = item
-       if (language){
-        total[language] = total[language] + 1 || 1
-       }
+    if (language){
+        if (total[language]){
+            total[language] = total[language] + 1
+        }
+        else {
+            total[language] = 1
+        }
+    }
         return total
     }, {})
     console.log(newData)

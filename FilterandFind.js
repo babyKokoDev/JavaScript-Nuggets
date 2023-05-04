@@ -22,3 +22,11 @@ console.log(youngPeople)
 const developer = people.filter((person)=> person.position === 'developer')
 console.log(developer)
 
+
+// No match
+const seniorDevs = people.filter((person)=> person.position === 'senior devs')
+console.log(seniorDevs)
+
+// Find
+
+

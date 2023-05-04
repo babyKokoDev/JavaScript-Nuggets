@@ -10,6 +10,8 @@ const people = [
     { name : 'anna', age : 35, position : 'intern'},
 ]
 
+const fruits = ['orange', 'pear', 'lemon']
+
 const youngPeople = people.filter((person)=>{
     // if (person.age < 30){
     //     return true
@@ -28,5 +30,17 @@ const seniorDevs = people.filter((person)=> person.position === 'senior devs')
 console.log(seniorDevs)
 
 // Find
+const fruit = fruits.find(fruit=> fruit === 'lemon')
+console.log(fruit)
+
+const oldPerson = people.find((person)=> person.age > 35)
+console.log(oldPerson)
+
+// Multiple matches - first match
+const randomPerson = people.find((person)=> person.age < 30)
+console.log(randomPerson)
+
+const anna = people.filter((person)=> person.name === 'anna')
+console.log(anna[0].position)
 
 

@@ -63,3 +63,39 @@ const fetchApi = () => {
 }
 
 fetchApi()
+
+const newapi = [
+    {
+        id : 1,
+        language : 'javascript'
+    },
+    {
+        id : 1,
+        language : 'css'
+    },
+    {
+        id : 1,
+        language : 'html'
+    },
+    {
+        id : 1,
+        language : 'html'
+    },
+    {
+        id : 1,
+        language : 'css'
+    },
+]
+
+const newarray = newapi.reduce((total, item)=>{
+    
+    const {language} = item
+    if (total[language]){
+        total[language] = total[language] + 1
+    }else {
+        total[language] = 1
+    }
+    return total
+}, {})
+
+console.log(newarray)

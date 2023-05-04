@@ -36,8 +36,25 @@ const total = cart.reduce((total, item)=>{
     return total
 }, {totalAmount : 0, totalPrice : 0})
 
+total.totalPrice = parseFloat(total.totalPrice.toFixed(2))
+
 console.log(total)
 
 // github repos example
 
 const url = 'https://api.github.com/users/john-smilga/repos?per_page=100'
+
+const fetchApi = () => {
+   fetch(url).then((response)=>response.json()).then((data)=>{
+    const newData = data.reduce((total, item)=>{
+      const {language} = item
+       if (language){
+        total[language] = total[language] + 1 || 1
+       }
+        return total
+    }, {})
+    console.log(newData)
+   })
+}
+
+fetchApi()

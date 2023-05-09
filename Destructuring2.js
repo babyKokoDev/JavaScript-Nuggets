@@ -7,6 +7,3 @@ const bob = {
     }
 }
 
-const {siblings : {sister}} = bob
-
-console.log(sister)

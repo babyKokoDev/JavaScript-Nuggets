@@ -7,3 +7,6 @@ const bob = {
     }
 }
 
+
+const {first, last, city, siblings :{sister}} = bob
+console.log(first, last, city, sister)

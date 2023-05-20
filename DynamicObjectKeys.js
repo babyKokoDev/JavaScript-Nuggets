@@ -37,7 +37,7 @@
         updateState('products', ['phone', 'iphone'])
         console.log(state)
 
-        const newArray = ["apple", "pineapple", "orange", "banana", "banana", "apple", "orange"]
+        const newArray = ["apple", "pineapple", "orange", "banana", "banana", "apple", "orange", "apple", "pineapple", "orange", "banana", "banana", "apple", "orange"]
 
         const dynamicArray = newArray.reduce((total, item)=>{
             if (total[item]){

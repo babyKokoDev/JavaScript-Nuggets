@@ -22,6 +22,12 @@
                 age : 26,
                 position : "intern"
             
+            },
+            {
+                name : "Jayeola",
+                age : 27,
+                position : "assistant"
+            
             }
         ]
 

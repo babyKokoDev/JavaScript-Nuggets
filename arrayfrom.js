@@ -21,7 +21,6 @@ const items = Array.from({length : 120}, (_, index)=>{
 })
  const itemsPerPage = 10
  const page = items.length / itemsPerPage
-
 const newItems = Array.from({length : page}, (_, index)=>{
    const start = index * itemsPerPage
    const newArray = items.slice(start, start + itemsPerPage)

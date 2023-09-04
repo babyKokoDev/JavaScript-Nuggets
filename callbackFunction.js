@@ -13,7 +13,7 @@ function handleName(name, cb){
     cb(fullName)
 }
 
-// handleName('Elijah', makeUpperCase)
-// handleName('Elijah', reverseString)
+handleName('Elijah', makeUpperCase)
+handleName('Elijah', reverseString)
 
-handleName('Elijah', (value) => console.log(value))
+// handleName('Elijah', (value) => console.log(value))

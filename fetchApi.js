@@ -3,7 +3,7 @@ const url = "https://www.course-api.com/react-tours-project";
 // fetch(url)
 //   .then((result) => result.json())
 //   .then((data) => console.log(data))
-//   .catch((err) => console.log(err));
+//   .catch((error) => console.log(error));
 
 
 const getTours = async () => {

@@ -10,7 +10,7 @@ const getTours = async () => {
     try {
         const resp = await fetch(url)
         if (!resp.ok){
-            const msg = `There was an error "${resp.status} ${resp.statusText}"`
+            const msg = `There was indeed an error "${resp.status} ${resp.statusText}"`
             throw new Error(msg)
         }
         const data = await resp.json()

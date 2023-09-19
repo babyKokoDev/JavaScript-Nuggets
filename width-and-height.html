@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        .btn {
+            display: block;
+            width: 200px;
+            margin: 0 auto;
+            margin-top: 3rem;
+            background-color: blueviolet;
+            color: white;
+            padding: 5px;
+        }
+        .box {
+            width: 150px;
+            height: 150px;
+            background: grey;
+            margin: 0 auto;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Width/Height</h1>
+    <button class="btn">Get Dimensions</button>
+    <div class="box"></div>
+    <script>
+        console.log('height', window.innerHeight);
+        console.log('width', window.innerWidth);
+
+        const btn = document.querySelector('.btn');
+        const box = document.querySelector('.box')
+
+        btn.addEventListener('click',()=>{
+            const dimensions = box.getBoundingClientRect();
+            console.log(dimensions)
+        })
+    </script>
+</body>
+</html>
